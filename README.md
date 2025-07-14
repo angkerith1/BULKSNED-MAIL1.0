@@ -1,0 +1,2 @@
+# BULKSNED-MAIL1.0
+Development BY @RITHCYBER-TEAM
