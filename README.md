@@ -14,9 +14,7 @@ A powerful Python script for sending bulk emails using multiple SMTP accounts wi
 
 - Python 3.6+
 - Required Python packages (install via `pip install -r requirements.txt`):
-# Ultimate Bulk Email Sender
-
-![Banner](https://via.placeholder.com/1200x400/2D3748/FFFFFF?text=Ultimate+Bulk+Email+Sender+-+High+Performance+SMTP+Campaigns)
+# BUKE Email Sender
 
 A robust Python solution for sending bulk emails with multi-SMTP load balancing, automatic retries, and detailed analytics.
 
