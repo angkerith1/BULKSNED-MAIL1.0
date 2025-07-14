@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESS GRANTED</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #00ff00;
+            border-radius: 0;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #00ff00;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: glitch 1s linear infinite;
+        }
+        .content {
+            padding: 30px;
+            background-color: #111;
+        }
+        .message {
+            margin-bottom: 25px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #000;
+            color: #00ff00 !important;
+            text-decoration: none;
+            border: 1px solid #00ff00;
+            border-radius: 0;
+            font-weight: bold;
+            margin: 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #00ff00;
+            color: #000 !important;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            background-color: #000;
+            border-top: 1px solid #00ff00;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 0.05em 0 0 #ff00ff, -0.05em -0.025em 0 #00ffff; }
+            14% { text-shadow: 0.05em 0 0 #ff00ff, -0.05em -0.025em 0 #00ffff; }
+            15% { text-shadow: -0.05em -0.025em 0 #ff00ff, 0.025em 0.025em 0 #00ffff; }
+            49% { text-shadow: -0.05em -0.025em 0 #ff00ff, 0.025em 0.025em 0 #00ffff; }
+            50% { text-shadow: 0.025em 0.05em 0 #ff00ff, 0.05em 0 0 #00ffff; }
+            99% { text-shadow: 0.025em 0.05em 0 #ff00ff, 0.05em 0 0 #00ffff; }
+            100% { text-shadow: -0.025em 0 0 #ff00ff, -0.025em -0.025em 0 #00ffff; }
+        }
+        .code-block {
+            background-color: #000;
+            border: 1px solid #00ff00;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        .terminal {
+            position: relative;
+        }
+        .terminal::before {
+            content: ">_";
+            position: absolute;
+            left: -30px;
+            color: #ff5555;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>SYSTEM NOTIFICATION</h1>
+        </div>
+        
+        <div class="content">
+            <div class="message">
+                <p>Greetings, {name}.</p>
+                
+                <p>Your access to the <span style="color:#ff5555">mainframe</span> has been <span style="color:#00ff00">verified</span>.</p>
+                
+                <div class="code-block">
+[SYSTEM] User: {name}<br>
+[SYSTEM] Email: {email}<br>
+[SYSTEM] Status: <span style="color:#00ff00">ACTIVE</span><br>
+[SYSTEM] Security: <span style="color:#00ff00">ENABLED</span>
+                </div>
+                
+                <p class="terminal">Initializing secure connection protocol...</p>
+                <p class="terminal">Establishing encrypted channel...</p>
+                <p class="terminal" style="color:#00ff00">Connection secured.</p>
+            </div>
+            
+            <a href="{unsubscribe_link}" class="button">
+                TERMINATE CONNECTION
+            </a>
+            
+            <p>This message will self-destruct in 24 hours.</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 CYBERSECURITY NETWORK</p>
+            <p>This is an automated message. Do not reply.</p>
+        </div>
+    </div>
+</body>
+</html>
